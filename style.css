@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.workspace {
+    grid-template-columns: 78px 500px;
+    display: grid;
+    grid-template-areas:
+        "space top"
+        "side canvas";
+    gap: 10px;
+}
+
+.toolbar {
+    width: 60px;
+    grid-area: side;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 8px;
+    border: 1px solid black;
+}
+
+.toolbar-top {
+    height: 50px;
+    grid-area: top;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+    border: 1px solid black;
+}
+
+#canvas {
+    background-color: white;
+    grid-area: canvas;
+    border: 1px solid black;
+}
+
+.toolbar button {
+    padding: 5px;
+    border: 1.5px solid #2828c1;
+    border-radius: 5px;
+}
+
+.toolbar button:hover {
+    background: #84a0d3;
+}
